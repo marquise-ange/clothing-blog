@@ -1,142 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clothing blog</title>
-  <link rel="stylesheet" href="CSS/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <aside class="sidebar">
-    <h2 class="logo"><a href="#">LOGO</a></h2>
 
-    <nav class="category-nav">
-      <a href="#">Shirts</a>
-      <a href="#">Dresses</a>
-      <details>
-        <summary>Jeans</summary>
-        <div class="subcategory-nav">
-          <a href="#">Skinny</a>
-          <a href="#">Relaxed</a>
-          <a href="#">Bootcut</a>
-          <a href="#">Straight</a>
+    <aside class="sidebar">
+        <h2>LOGO</h2>
+        <nav>
+            <a href="#">Shirts</a>
+            <a href="#">Dresses</a>
+            <div class="jeans-menu">
+                <a href="#">Jeans
+                    <i class="fa fa-caret-down"></i>
+                </a>
+
+                <div class="jeans-links">
+                    <a href="#">Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+
+            </div>
+
+            <a href="#">Jackets</a>
+
+            <a href="#">Gymwear</a>
+
+            <a href="#">Blazers</a>
+
+            <a href="#">Shoes</a>
+
+        </nav>
+
+
+        <div class="bottom-links">
+
+            <a href="#footer">Contact</a>
+            <a href="#subscribe">Newsletter</a>
+            <a href="#subscribe">Subscribe</a>
+
         </div>
-      </details>
-      <a href="#">Jackets</a>
-      <a href="#">Gymwear</a>
-      <a href="#">Blazers</a>
-      <a href="#">Shoes</a>
-    </nav>
 
-    <nav class="footer-nav">
-      <a href="#">Contact</a>
-      <details class="newsletter-menu">
-        <summary>Newsletter</summary>
-        <form class="newsletter-form">
-          <label>Email address<input type="email" placeholder="Enter e-mail" required></label>
-          <button type="submit">Subscribe</button>
-        </form>
-      </details>
-      <a href="#">Subscribe</a>
-    </nav>
-  </aside>
+    </aside>
 
-  <main class="main-content">
-    <header class="page-header">
-      <h1 class="jeans-head">Jeans</h1>
-    </header>
 
-    <section class="hero">
-      <img src="Images/image.png" alt="Jeans collection">
-      <div class="hero-copy">
-        <h2>New arrivals</h2>
-        <p>COLLECTION 2016</p>
-        <a class="shop-button" href="#">SHOP NOW</a>
-      </div>
-    </section>
+    <!-- MAIN CONTENT -->
 
-    <section class="products-section">
-      <p class="item-count">8 items</p>
-      <div class="product-grid">
-        <article class="product">
-          <img src="Images/jeans1.jpg" alt="Ripped Skinny Jeans">
-          <p>Ripped Skinny Jeans<br><strong>$24.99</strong></p>
-        </article>
-        <article class="product">
-          <img src="Images/jeans2.jpg" alt="Mega Ripped Jeans">
-          <p>Mega Ripped Jeans<br><strong>$19.99</strong></p>
-        </article>
-        <article class="product">
-          <img src="Images/jeans2.jpg" alt="Mega Ripped Jeans">
-          <p>Mega Ripped Jeans<br><strong>$19.99</strong></p>
-        </article>
-        <article class="product">
-          <img src="Images/jeans3.jpg" alt="Washed Skinny Jeans">
-          <p>Washed Skinny Jeans<br><strong>$20.50</strong></p>
-        </article>
-        <article class="product">
-          <img src="Images/jeans3.jpg" alt="Washed Skinny Jeans">
-          <p>Washed Skinny Jeans<br><strong>$20.50</strong></p>
-        </article>
-        <article class="product">
-          <img src="Images/jeans4.jpg" alt="Vintage Skinny Jeans">
-          <p>Vintage Skinny Jeans<br><strong class="sale-price">$14.99</strong></p>
-        </article>
-        <article class="product">
-          <img src="Images/jeans4.jpg" alt="Vintage Skinny Jeans">
-          <p>Vintage Skinny Jeans<br><strong>$14.99</strong></p>
-        </article>
-        <article class="product">
-          <img src="Images/jeans1.jpg" alt="Ripped Skinny Jeans">
-          <p>Ripped Skinny Jeans<br><strong>$24.99</strong></p>
-        </article>
-      </div>
-    </section>
+    <main class="main">
 
-    <section class="subscribe-section">
-      <h2>Subscribe</h2>
-      <p>To get special offers and VIP treatment:</p>
-      <form class="subscribe-form">
-        <label>Email address<input type="email" placeholder="Enter e-mail" required></label>
-        <button class="submit">Subscribe</button>
-      </form>
-    </section>
 
-    <footer class="site-footer">
-      <section>
-        <h2>Contact</h2>
-        <p>Questions? Go ahead.</p>
-        <form class="contact-form">
-          <label>Name<input type="text" placeholder="Name" required></label>
-          <label>Email<input type="email" placeholder="Email" required></label>
-          <label>Subject<input type="text" placeholder="Subject" required></label>
-          <label>Message<textarea placeholder="Message" rows="3" required></textarea></label>
-          <button type="submit">Send</button>
-        </form>
-      </section>
-      <section>
-        <h2>About</h2>
-        <a href="#">About us</a>
-        <a href="#">We're hiring</a>
-        <a href="#">Support</a>
-        <a href="#">Shipment</a>
-         <a href="#">Find store</a>
-        <a href="#">Payment</a>
-         <a href="#">Gift cards</a>
-        <a href="#">Returns</a>
-         <a href="#">Help</a>
-      </section>
-      <section>
-        <h2>Store</h2>
-        <p>Company Name</p>
-        <p>0044 123 123</p>
-        <p>ex@mail.com</p>
-        <h3>We accept</h3>
-        <p>Amex<br>Credit Card</p>
-      </section>
-    </footer>
+        <!-- HEADER -->
 
-    <p class="copyright">Powered by <a href="#">Marquise</a></p>
-  </main>
+        <header class="header">
+
+            <h2>Jeans</h2>
+
+            <div class="icons">
+
+                <i class="fa fa-shopping-cart"></i>
+
+                <i class="fa fa-search"></i>
+
+            </div>
+
+        </header>
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <img src="Images/image.png" alt="Jeans">
+
+            <div class="hero-content">
+
+                <h1>New arrivals</h1>
+
+                <h2>COLLECTION 2016</h2>
+
+                <a href="#products">SHOP NOW</a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ITEM COUNT -->
+
+        <div class="item-count">
+            8 items
+        </div>
+
+
+        <!-- PRODUCTS -->
+
+        <section class="products" id="products">
+
+
+            <!-- PRODUCT 1 -->
+
+            <article class="product">
+
+                <img src="Images/jeans1.jpg"
+                    alt="Ripped Skinny Jeans">
+
+                <p>
+                    Ripped Skinny Jeans
+                    <br>
+                    <strong>$24.99</strong>
+                </p>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+
+            <article class="product">
+
+                <img src="Images/jeans2.jpg"
+                    alt="Mega Ripped Jeans">
+
+                <p>
+                    Mega Ripped Jeans
+                    <br>
+                    <strong>$19.99</strong>
+                </p>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+
+            <article class="product">
+
+                <div class="product-image">
+
+                    <img src="Images/jeans2.jpg"
+                        alt="Mega Ripped Jeans">
+
+                    <span class="label">
+                        New
+                    </span>
+
+                    <button>
+                        Buy now
+                        <i class="fa fa-shopping-cart"></i>
+                    </button>
+
+                </div>
+
+                <p>
+                    Mega Ripped Jeans
+                    <br>
+                    <strong>$19.99</strong>
+                </p>
+
+            </article>
+
+
+            <!-- PRODUCT 4 -->
+
+            <article class="product">
+
+                <img src="Images/jeans3.jpg"
+                    alt="Washed Skinny Jeans">
+
+                <p>
+                    Washed Skinny Jeans
+                    <br>
+                    <strong>$20.50</strong>
+                </p>
+
+            </article>
+
+
+            <!-- PRODUCT 5 -->
+
+            <article class="product">
+
+                <img src="Images/jeans3.jpg"
+                    alt="Washed Skinny Jeans">
+
+                <p>
+                    Washed Skinny Jeans
+                    <br>
+                    <strong>$20.50</strong>
+                </p>
+
+            </article>
+
+
+            <!-- PRODUCT 6 -->
+
+            <article class="product">
+
+                <div class="product-image">
+
+                    <img src="Images/jeans4.jpg"
+                        alt="Vintage Skinny Jeans">
+
+                    <span class="label">
+                        Sale
+                    </span>
+
+                    <button>
+                        Buy now
+                        <i class="fa fa-shopping-cart"></i>
+                    </button>
+
+                </div>
+
+                <p>
+                    Vintage Skinny Jeans
+                    <br>
+                    <strong class="sale">$14.99</strong>
+                </p>
+
+            </article>
+
+
+            <!-- PRODUCT 7 -->
+
+            <article class="product">
+
+                <img src="Images/jeans4.jpg"
+                    alt="Vintage Skinny Jeans">
+
+                <p>
+                    Vintage Skinny Jeans
+                    <br>
+                    <strong>$14.99</strong>
+                </p>
+
+            </article>
+
+
+            <!-- PRODUCT 8 -->
+
+            <article class="product">
+
+                <img src="Images/jeans1.jpg"
+                    alt="Ripped Skinny Jeans">
+
+                <p>
+                    Ripped Skinny Jeans
+                    <br>
+                    <strong>$24.99</strong>
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- SUBSCRIBE -->
+
+        <section class="subscribe" id="subscribe">
+
+            <h1>Subscribe</h1>
+
+            <p>
+                To get special offers and VIP treatment:
+            </p>
+
+            <input
+                type="email"
+                placeholder="Enter e-mail">
+
+            <button>
+                Subscribe
+            </button>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer id="footer">
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-section">
+
+                <h3>Contact</h3>
+                
+
+                <p>
+                    Questions? Go ahead.
+                </p>
+
+                <input
+                    type="text"
+                    placeholder="Name">
+
+                <input
+                    type="email"
+                    placeholder="Email">
+
+                <input
+                    type="text"
+                    placeholder="Subject">
+
+                <input
+                    type="text"
+                    placeholder="Message">
+
+                <button>
+                    Send
+                </button>
+
+            </div>
+
+
+            <!-- ABOUT -->
+
+            <div class="footer-section">
+
+                <h3>About</h3>
+
+                <a href="#">About us</a>
+
+                <a href="#">We're hiring</a>
+
+                <a href="#">Support</a>
+
+                <a href="#">Find store</a>
+
+                <a href="#">Shipment</a>
+
+                <a href="#">Payment</a>
+
+                <a href="#">Gift card</a>
+
+                <a href="#">Return</a>
+
+                <a href="#">Help</a>
+
+            </div>
+
+
+            <!-- STORE -->
+
+            <div class="footer-section store">
+
+                <h3>Store</h3>
+
+                <p>
+                    <i class="fa fa-map-marker"></i>
+                    Company Name
+                </p>
+
+                <p>
+                    <i class="fa fa-phone"></i>
+                    0044123123
+                </p>
+
+                <p>
+                    <i class="fa fa-envelope"></i>
+                    ex@mail.com
+                </p>
+
+
+                <h3>We accept</h3>
+
+                <p>
+                    <i class="fa fa-cc-amex"></i>
+                    Amex
+                </p>
+
+                <p>
+                    <i class="fa fa-credit-card"></i>
+                    Credit Card
+                </p>
+
+
+                <!-- SOCIAL MEDIA -->
+
+                <div class="social">
+
+                    <i class="fa fa-facebook-official"></i>
+
+                    <i class="fa fa-instagram"></i>
+
+                    <i class="fa fa-snapchat"></i>
+
+                    <i class="fa fa-pinterest-p"></i>
+
+                    <i class="fa fa-twitter"></i>
+
+                    <i class="fa fa-linkedin"></i>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="copyright">
+
+            Powered by Marquise
+
+        </div>
+
+    </main>
+
 </body>
+
 </html>
