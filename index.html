@@ -3,193 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f4f1e9">
   <title>Clothing blog</title>
   <link rel="stylesheet" href="CSS/index.css">
 </head>
-<body>  
-  <header class="mobile-header">
-    <a class="wordmark" href="#top">FORM / FIELD</a>
-    <button class="icon-button menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">Menu</button>
-  </header>
+<body>
+  <aside class="sidebar">
+    <h2 class="logo"><a href="#">LOGO</a></h2>
 
-  <div class="page-shade">LOGO</div>
-
-  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
-    <div class="sidebar-top">
-      <a class="wordmark" href="#top">FORM / FIELD</a>
-      <button class="icon-button sidebar-close" type="button" aria-label="Close navigation">Close</button>
-    </div>
-
-    <nav class="category-nav" aria-label="Categories">
-      <a class="category-link" href="#products">Shirts</a>
-      <a class="category-link" href="#products">Dresses</a>
-      <details class="category-group" open>
-        <summary class="category-link">Jeans</summary>
+    <nav class="category-nav">
+      <a href="#">Shirts</a>
+      <a href="#">Dresses</a>
+      <details>
+        <summary>Jeans</summary>
         <div class="subcategory-nav">
-          <a href="#products">Skinny</a>
-          <a href="#products">Relaxed</a>
-          <a href="#products">Bootcut</a>
-          <a href="#products">Straight</a>
+          <a href="#">Skinny</a>
+          <a href="#">Relaxed</a>
+          <a href="#">Bootcut</a>
+          <a href="#">Straight</a>
         </div>
       </details>
-      <a class="category-link" href="#products">Jackets</a>
-      <a class="category-link" href="#products">Gymwear</a>
-      <a class="category-link" href="#products">Blazers</a>
-      <a class="category-link" href="#products">Shoes</a>
+      <a href="#">Jackets</a>
+      <a href="#">Gymwear</a>
+      <a href="#">Blazers</a>
+      <a href="#">Shoes</a>
     </nav>
 
-    <nav class="utility-nav" aria-label="Information">
-      <a href="#footer">Contact</a>
-      <button type="button" class="text-button newsletter-open">Newsletter</button>
-      <a href="#subscribe">Subscribe</a>
+    <nav class="footer-nav">
+      <a href="#">Contact</a>
+      <details class="newsletter-menu">
+        <summary>Newsletter</summary>
+        <form class="newsletter-form">
+          <label>Email address<input type="email" placeholder="Enter e-mail" required></label>
+          <button type="submit">Subscribe</button>
+        </form>
+      </details>
+      <a href="#">Subscribe</a>
     </nav>
-    <p class="sidebar-note">Considered clothes for everyday life.</p>
   </aside>
 
-  <main class="main-content" id="top">
+  <main class="main-content">
     <header class="page-header">
-      <p class="eyebrow">Spring / Summer 2026</p>
-      <div class="header-actions">
-        <a href="#products" aria-label="Shop collection">Shop</a>
-        <a href="#footer">Bag <span class="bag-count">0</span></a>
-      </div>
+      <h1 class="jeans-head">Jeans</h1>
     </header>
 
-    <form>
-        <label></label>
-    </form>
-
-    <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-image" src="Images/image.png" alt="A close-up of this season's denim collection">
+    <section class="hero">
+      <img src="Images/image.png" alt="Jeans collection">
       <div class="hero-copy">
-        <p class="eyebrow">The denim edit</p>
-        <h1 id="hero-title">New<br>arrivals</h1>
-        <p class="hero-caption">Made to move with you.</p>
-        <a class="button button-light" href="#products">Shop the collection <span aria-hidden="true">↗</span></a>
+        <h2>New arrivals</h2>
+        <p>COLLECTION 2016</p>
+        <a class="shop-button" href="#">SHOP NOW</a>
       </div>
-      <p class="hero-index">01 — 04</p>
     </section>
 
-    <section class="collection" id="products" aria-labelledby="collection-title">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">The everyday uniform</p>
-        </div>
-        <p class="item-count">08 pieces</p>
-      </div>
-
+    <section class="products-section">
+      <p class="item-count">8 items</p>
       <div class="product-grid">
-        <article class="product-card">
-          <div class="product-image-wrap"><img src="Images/jeans1.jpg" alt="Ripped skinny jeans" loading="lazy"></div>
-          <div class="product-info"><h3>Ripped Skinny Jeans</h3><p>$24.99</p></div>
+        <article class="product">
+          <img src="Images/jeans1.jpg" alt="Ripped Skinny Jeans">
+          <p>Ripped Skinny Jeans<br><strong>$24.99</strong></p>
         </article>
-        <article class="product-card">
-          <div class="product-image-wrap"><img src="Images/jeans2.jpg" alt="Mega ripped jeans" loading="lazy"></div>
-          <div class="product-info"><h3>Mega Ripped Jeans</h3><p>$19.99</p></div>
+        <article class="product">
+          <img src="Images/jeans2.jpg" alt="Mega Ripped Jeans">
+          <p>Mega Ripped Jeans<br><strong>$19.99</strong></p>
         </article>
-        <article class="product-card">
-          <div class="product-image-wrap"><img src="Images/jeans2.jpg" alt="Mega ripped jeans in a new wash" loading="lazy"><span class="product-badge">New</span><button class="quick-add" type="button">Add to bag <span aria-hidden="true">+</span></button></div>
-          <div class="product-info"><h3>Mega Ripped Jeans</h3><p>$19.99</p></div>
+        <article class="product">
+          <img src="Images/jeans2.jpg" alt="Mega Ripped Jeans">
+          <p>Mega Ripped Jeans<br><strong>$19.99</strong></p>
         </article>
-        <article class="product-card">
-          <div class="product-image-wrap"><img src="Images/jeans3.jpg" alt="Washed skinny jeans" loading="lazy"></div>
-          <div class="product-info"><h3>Washed Skinny Jeans</h3><p>$20.50</p></div>
+        <article class="product">
+          <img src="Images/jeans3.jpg" alt="Washed Skinny Jeans">
+          <p>Washed Skinny Jeans<br><strong>$20.50</strong></p>
         </article>
-        <article class="product-card">
-          <div class="product-image-wrap"><img src="Images/jeans3.jpg" alt="Washed skinny jeans in a light wash" loading="lazy"></div>
-          <div class="product-info"><h3>Washed Skinny Jeans</h3><p>$20.50</p></div>
+        <article class="product">
+          <img src="Images/jeans3.jpg" alt="Washed Skinny Jeans">
+          <p>Washed Skinny Jeans<br><strong>$20.50</strong></p>
         </article>
-        <article class="product-card">
-          <div class="product-image-wrap"><img src="Images/jeans4.jpg" alt="Vintage skinny jeans" loading="lazy"><span class="product-badge">Sale</span><button class="quick-add" type="button">Add to bag <span aria-hidden="true">+</span></button></div>
-          <div class="product-info"><h3>Vintage Skinny Jeans</h3><p class="sale-price">$14.99</p></div>
+        <article class="product">
+          <img src="Images/jeans4.jpg" alt="Vintage Skinny Jeans">
+          <p>Vintage Skinny Jeans<br><strong class="sale-price">$14.99</strong></p>
         </article>
-        <article class="product-card">
-          <div class="product-image-wrap"><img src="Images/jeans4.jpg" alt="Vintage skinny jeans in a dark wash" loading="lazy"></div>
-          <div class="product-info"><h3>Vintage Skinny Jeans</h3><p>$14.99</p></div>
+        <article class="product">
+          <img src="Images/jeans4.jpg" alt="Vintage Skinny Jeans">
+          <p>Vintage Skinny Jeans<br><strong>$14.99</strong></p>
         </article>
-        <article class="product-card">
-          <div class="product-image-wrap"><img src="Images/jeans1.jpg" alt="Ripped skinny jeans in a faded wash" loading="lazy"></div>
-          <div class="product-info"><h3>Ripped Skinny Jeans</h3><p>$24.99</p></div>
+        <article class="product">
+          <img src="Images/jeans1.jpg" alt="Ripped Skinny Jeans">
+          <p>Ripped Skinny Jeans<br><strong>$24.99</strong></p>
         </article>
       </div>
     </section>
 
-    <section class="subscribe-section" id="subscribe" aria-labelledby="subscribe-title">
-      <div>
-        <p class="eyebrow">A note from us</p>
-        <h2 id="subscribe-title">Good things,<br>occasionally.</h2>
-      </div>
+    <section class="subscribe-section">
+      <h2>Subscribe</h2>
+      <p>To get special offers and VIP treatment:</p>
       <form class="subscribe-form">
-        <label for="subscribe-email">Get new arrivals and considered offers in your inbox.</label>
-        <div class="email-field"><input id="subscribe-email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">Join <span aria-hidden="true">↗</span></button></div>
+        <label>Email address<input type="email" placeholder="Enter e-mail" required></label>
+        <button class="submit">Subscribe</button>
       </form>
     </section>
 
-    <footer class="site-footer" id="footer">
-      <section class="footer-contact">
-        <p class="eyebrow">Get in touch</p>
-        <h2>We're here<br>to help.</h2>
-        <p>Questions about an order or just saying hello?</p>
-        <a href="mailto:hello@formandfield.example">hello@formandfield.example</a>
+    <footer class="site-footer">
+      <section>
+        <h2>Contact</h2>
+        <p>Questions? Go ahead.</p>
+        <form class="contact-form">
+          <label>Name<input type="text" placeholder="Name" required></label>
+          <label>Email<input type="email" placeholder="Email" required></label>
+          <label>Subject<input type="text" placeholder="Subject" required></label>
+          <label>Message<textarea placeholder="Message" rows="3" required></textarea></label>
+          <button type="submit">Send</button>
+        </form>
       </section>
-      <nav class="footer-links" aria-label="About">
-        <h3>Explore</h3>
-        <a href="#footer">About us</a>
-        <a href="#footer">Our approach</a>
-        <a href="#footer">Shipping</a>
-        <a href="#footer">Returns &amp; help</a>
-      </nav>
-      <section class="footer-store">
-        <h3>Find us</h3>
+      <section>
+        <h2>About</h2>
+        <a href="#">About us</a>
+        <a href="#">We're hiring</a>
+        <a href="#">Support</a>
+        <a href="#">Shipment</a>
+         <a href="#">Find store</a>
+        <a href="#">Payment</a>
+         <a href="#">Gift cards</a>
+        <a href="#">Returns</a>
+         <a href="#">Help</a>
+      </section>
+      <section>
+        <h2>Store</h2>
         <p>Company Name</p>
         <p>0044 123 123</p>
-        <a href="mailto:hello@formandfield.example">hello@formandfield.example</a>
-        <h3 class="payment-title">We accept</h3>
-        <p>Visa · Mastercard · Amex</p>
+        <p>ex@mail.com</p>
+        <h3>We accept</h3>
+        <p>Amex<br>Credit Card</p>
       </section>
     </footer>
 
-    <div class="copyright">© 2026 Form / Field <a href="#top">Back to top ↑</a></div>
+    <p class="copyright">Powered by <a href="#">Marquise</a></p>
   </main>
-
-  <dialog class="newsletter-dialog" id="newsletter-dialog" aria-labelledby="dialog-title">
-    <form method="dialog" class="dialog-close-form"><button class="dialog-close" aria-label="Close newsletter">×</button></form>
-    <p class="eyebrow">Stay in the know</p>
-    <h2 id="dialog-title">A little more<br>good in your inbox.</h2>
-    <p>Join our mailing list for new arrivals and special offers.</p>
-    <form class="dialog-form">
-      <label class="visually-hidden" for="dialog-email">Email address</label>
-      <input id="dialog-email" type="email" placeholder="Your email address" required>
-      <button class="button button-dark" type="submit">Join the list <span aria-hidden="true">↗</span></button>
-    </form>
-  </dialog>
-
-  <script>
-    const sidebar = document.querySelector("#sidebar");
-    const shade = document.querySelector("#page-shade");
-    const menuToggle = document.querySelector(".menu-toggle");
-    const newsletterDialog = document.querySelector("#newsletter-dialog");
-
-    function setMenuOpen(isOpen) {
-      sidebar.classList.toggle("is-open", isOpen);
-      shade.classList.toggle("is-visible", isOpen);
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
-    }
-
-    menuToggle.addEventListener("click", () => setMenuOpen(true));
-    document.querySelector(".sidebar-close").addEventListener("click", () => setMenuOpen(false));
-    shade.addEventListener("click", () => setMenuOpen(false));
-    document.querySelectorAll(".newsletter-open").forEach((button) => {
-      button.addEventListener("click", () => newsletterDialog.showModal());
-    });
-    document.querySelectorAll(".subscribe-form, .dialog-form").forEach((form) => {
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        if (newsletterDialog.open) newsletterDialog.close();
-        form.reset();
-      });
-    });
-  </script>
 </body>
 </html>
